@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .msj {
+        display: none;
+      }
+      label {
+        display: block;
+      }
+      span {
+        display: block;
+      }
+
+      input:focus:invalid ~ .msj {
+        display: block;
+      }
+    </style>
+    <title>prueba validación con</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="cvc">CVC</label>
+      <input
+        class="cvc"
+        type="text"
+        name="cvc"
+        placeholder="e.g. 123"
+        id="cvc"
+        required
+        pattern="[0-9]{3}"
+        maxlength="3"
+      />
+
+      <span class="msj">error</span>
+    </div>
+    <button class="boton" type="submit">Confirm</button>
+  </body>
+</html>

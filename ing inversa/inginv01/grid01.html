@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid 01</title>
+    <style>
+      .contenedor {
+        display: grid;
+        width: 80vw;
+        height: 80vh;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 40px 5fr 1fr 40px;
+        grid-template-areas:
+          "header header"
+          "aside main" "aside extra" "footer footer";
+        color: white;
+        text-align: center;
+        gap: 10px;
+      }
+      header {
+        background-color: antiquewhite;
+        grid-area: header;
+      }
+      main {
+        background-color: rgb(171, 135, 88);
+        grid-area: main;
+      }
+      aside {
+        background-color: rgb(181, 169, 155);
+        grid-area: aside;
+      }
+      .extra {
+        background-color: rgb(95, 93, 91);
+        grid-area: extra;
+      }
+      footer {
+        background-color: rgb(127, 146, 132);
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <span>header</span>
+      </header>
+      <aside>
+        <span>sidebar</span>
+      </aside>
+      <main>
+        <span>Main</span>
+      </main>
+      <div class="extra">
+        <span>extra</span>
+      </div>
+      <footer>
+        <span>footer</span>
+      </footer>
+    </div>
+  </body>
+</html>

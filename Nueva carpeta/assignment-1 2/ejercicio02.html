@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica02CSS</title>
+    <script src="https://kit.fontawesome.com/d07e78fd84.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="ex01.css"> -->
+    <style>
+        body {
+            padding: 1%;
+            font-family: sans-serif;
+            
+        }
+        
+        .fondo {
+            box-sizing: border-box;
+            background-color: #d4c7c7;
+            border-bottom: solid 14px rgb(227, 240, 236);
+            margin: 0 auto;
+            display: flex;
+            width: 500px;
+            height: 500px;
+            flex-direction: column;
+           
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 60%;
+            border: dotted 2px blue;
+           
+        }
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #3c3232;
+            height: 5%;
+            flex-direction: row;
+            padding: 2%;
+            justify-content: space-between;
+            align-content: center;
+            color: aliceblue;
+                        
+        }
+
+        h1 {
+            font-weight: lighter;
+            color: rgb(227, 240, 236);
+            border: solid 1px black;
+            margin: 0 auto;
+            text-align: center;
+}
+        img{
+            border: 3px solid rgb(227, 240, 236);
+            border-radius: 50%;
+            height: 175px;
+            width: 175px;
+            margin: 0 auto;
+        }
+       
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            margin-right: 3%;
+        }
+        
+        .justify {
+            text-align: justify;
+            color:rgb(227, 240, 236);
+            font-size: 12px;
+            border-top: solid 3px rgb(227, 240, 236);
+            border-bottom:solid 3px rgb(227, 240, 236);
+        }
+        
+                           
+     
+
+    </style>
+</head>
+<body>
+    <div class="fondo">
+    <header>
+        <nav>
+            <i class="fa-solid fa-house"></i>
+            <a href="">Social</a>
+        </nav>
+       
+        <img src="images/flywheel.jpg" alt="My Pic">
+        
+        <h1>My Portfolio</h1>  
+    </header>
+    
+    <main>
+        
+       
+        <div class="text">
+            
+            <p class="justify">Welcome to my Portfolio. Scroll to see examples of my work.</p>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <p class="tiny">very small text</p>
+        <div class="inputmail">
+             <input type="email">
+        </div>
+        <div class="button">
+            <button>Submit</button>
+        </div>
+    </footer>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sprint 1</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside>
+        <div class="card pos1">
+          <img src="imagenes/bg-card-front.png" alt="frente de tarjeta" />
+          <div class="card_info">
+            <p class="name">Juan Perez</p>
+            <p class="number">oooo oooo oooo oooo</p>
+          </div>
+        </div>
+        <div class="card pos2">
+          <img src="imagenes/bg-card-back.png" alt="reverso de tarjeta" />
+        </div>
+      </aside>
+
+      <main class="container2">
+        <form>
+          <div class="cardholdername">
+            <label for="cardholderName">Cardholder Name</label>
+            <input
+              type="text"
+              name="Name"
+              id="cardholderName"
+              placeholder="e.g. Juan Perez"
+              required
+            />
+          </div>
+
+          <div class="cardnumber">
+            <label for="cardNumber">Card Number</label>
+            <input
+              type="text"
+              name="Number"
+              id="cardNumber"
+              placeholder="e.g. 1234 5678 9012 3456"
+              required
+            />
+            <span class="no_valida">Wrong format - Numbers only</span>
+          </div>
+
+          <div class="expcvc">
+            <div class="expdate">
+              <label for="expDate">Exp. Date</label><br />
+              <div class="mmyy">
+                <input
+                  class="month"
+                  type="text"
+                  name="month"
+                  required
+                  placeholder="MM"
+                />
+                <input
+                  class="year"
+                  type="text"
+                  name="year"
+                  required
+                  placeholder="YY"
+                />
+              </div>
+              <span class="no_valida">Can't be blank</span>
+            </div>
+
+            <div class="cvc">
+              <label for="cvc">CVC</label><br />
+              <input
+                class="cvc"
+                type="text"
+                name="cvc"
+                id="cvc"
+                required
+                placeholder="e.g. 123"
+                pattern="[0-9]{3}"
+              />
+              <span class="no_valida"></span>
+            </div>
+          </div>
+
+          <button class="boton" type="submit">Confirm</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

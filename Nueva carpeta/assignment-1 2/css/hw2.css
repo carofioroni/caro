@@ -1,0 +1,26 @@
+
+header{
+    background-color:#808080ad ;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+h2{
+    color: #00008B;
+}
+h1,
+h2{
+    text-transform: uppercase;
+}
+section{
+    background-color:#808080;
+}
+a{
+    color: #000;
+    background-color: #80808077;
+
+}
+img{
+    display: none;
+}

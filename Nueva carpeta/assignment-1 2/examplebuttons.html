@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function demo(butt) {
+  document.getElementById('cambio').innerHTML = butt.innerHTML;
+}
+
+    </script>
+   
+        
+    
+</head>
+<body>
+    <button type="button" onclick= "demo(this)">First</button>
+    <button type="button" onclick= "demo(this)">Second</button>
+    <button onclick="demo()">Haz clic</button>
+
+    
+    <p> este no cambia</p>
+    <p id="cambio">este es el que cambia</p>
+    <p>este tampoco cambia</p>
+    
+</body>
+</html>

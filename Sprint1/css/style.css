@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+aside {
+  width: 30%;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  height: 164px;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.pos1 {
+  left: 15%;
+}
+.pos2 {
+  left: 30%;
+}
+.card_info {
+  position: relative;
+  z-index: 1;
+}
+.container2 {
+  width: 70%;
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+}
+form {
+  background-color: antiquewhite;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2em;
+}
+input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+input .expcvc {
+  display: flex;
+}
+.mmyy {
+  display: flex;
+}
+.boton {
+  height: 2em;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+input:focus:invalid ~ .no_valida ::after {
+  content: "error";
+}

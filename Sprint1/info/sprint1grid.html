@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+        box-sizing: border-box;
+         margin: 0;
+        }
+        body {
+            min-width: 400px;
+            width: 100vw;
+            margin: 0 auto;
+        }
+       header {
+        width: 100%;
+        min-height: 300px;
+        border: solid 1px black;
+        background: linear-gradient (hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+       }  
+       .container2 {
+        display: inline-block;
+        background-color: rgb(10, 129, 89);
+        width: 100% ;
+        height: 68%;
+        border: solid 1px black;
+       }    
+      
+       form {
+        box-sizing: border-box;
+        padding-top: 25%;
+        padding-bottom: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+       }
+       .month{
+        display: inline;
+        width: 15%;
+       }
+       .year{
+        display: inline;
+        width: 15%;
+       }
+       .date {
+        display: flex;
+        
+       }
+    button{
+        margin-top: 5%;
+        padding: 1em;
+        color: white;
+        background-color: black;
+        border-style: none;
+        border-radius: 5px;
+    }
+    img {
+        display: none;
+        width: 70%;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    .anverso {
+        position: relative;
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="reverso" src="imágenes/bg-card-back.png" alt="reverso de tarjeta">
+        <img class="anverso" src="imágenes/bg-card-front.png" alt="anverso de tarjeta">
+    </header>
+    <div class="container2">
+    <form>
+            <label for ="cardholderName">Cardholder Name</label>        
+            <input type = "text" name = "Name" id = "cardholderName" required>  
+            <label for ="cardNumber">Card Number</label>        
+            <input type = "text" name = "Number" id = "cardNumber" required> 
+        <div class="date">
+            <label for="expDate">Exp. Date</label>
+            <input class="month" type = "text" name="month" required> 
+            <input class="year" type = "text" name="year" required>
+            <label for="cvc">CVC</label>
+            <input class="cvc" type = "text" name="cvc" id="cvc" required>
+        </div>
+        <button type="submit">Confirm</button>
+
+        </form>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+body {
+    background: red;
+    font-size: 150%;
+    margin: 4%;
+}
+header {
+    background-color: aquamarine;
+    text-align: center;
+}

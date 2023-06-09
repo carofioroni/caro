@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid 01</title>
+    <style>
+      .contenedor {
+        display: grid;
+        width: 80vw;
+        height: 80vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50% repeat(4, 1fr);
+        grid-template-areas:
+          "a1 a1 a1 a1"
+          "a2 a3 a4 a5"
+          "a2 a6 a4 a5"
+          "a2 a6 a7 a5"
+          "a2 a6 a8 a9";
+        color: white;
+        text-align: center;
+        gap: 10px;
+      }
+      div {
+        background-color: yellow;
+      }
+      .a1 {
+        grid-area: a1;
+      }
+      .a2 {
+        grid-area: a2;
+      }
+      .a3 {
+        grid-area: a3;
+      }
+      .a4 {
+        grid-area: a4;
+      }
+      .a5 {
+        grid-area: a5;
+      }
+      .a6 {
+        grid-area: a6;
+      }
+      .a7 {
+        grid-area: a7;
+      }
+      .a8 {
+        grid-area: a8;
+      }
+      .a9 {
+        grid-area: a9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="contenedor">
+      <div class="a1">1</div>
+      <div class="a2">2</div>
+      <div class="a3">3</div>
+      <div class="a4">4</div>
+      <div class="a5">5</div>
+      <div class="a6">6</div>
+      <div class="a7">7</div>
+      <div class="a8">8</div>
+      <div class="a9">9</div>
+    </main>
+  </body>
+</html>
